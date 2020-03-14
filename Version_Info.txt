@@ -26,4 +26,7 @@ v2 Table Creation: you can now create a db. To delete a pre-made db just type th
                     more link @ here: https://www.postgresql.org/docs/8.2/sql-droptable.html , enjoy!
 
 
---v3 User Input: user now can input the user data, e.g for school the 'admin' can enter the user's name, age, and address.
+v3 User Input: user now can input the user data, e.g for school the 'admin' can enter the user's name, age, and address.
+
+--v4 Efficient Input: Learned just to use %s in replacement of inputing more work. Simplier is better for you, and for other
+                        people to use/learn. Feel free to check v3 on the reason for this change to use %s.

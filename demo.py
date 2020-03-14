@@ -64,17 +64,14 @@ def insert_data():
 
 
         # user address
-        user_addr =  input('What is ' + user_name + ' address?: ')
+        user_addr =  input('What is ' + user_name + ' state?: ')
 
         print('Connection to table ' + table_name + ' is a success ' + '\n')
         cursor = connection.cursor()
 
         # Insert user data onto db table
-        cursor.execute('''INSERT INTO ''' + table_name + '''(NAME,AGE,ADDRESS)''' +
-                       ''' VALUES (''' + '\'' +
-                        user_name + '\',' +
-                       '\'' + str(user_age) + '\',' +
-                       '\'' + user_addr + '\'' +')'+';'+'''''')
+        query  = '''INSERT INTO ''' + table_name + '''(NAME,AGE,ADDRESS) VALUES (%s,%s,%s);'''
+        cursor.execute(query,(user_name,user_age,user_addr))
 
         # commit changes after connecting to cursor
         connection.commit()
@@ -95,7 +92,7 @@ def insert_data():
 
 
 def main():
-    create_table()
+    #create_table()
     insert_data()
 
 
