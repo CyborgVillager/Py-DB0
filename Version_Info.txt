@@ -15,9 +15,12 @@
 ----------------------------    ----------------------------   ------------------------- ------------------------------
 v0 Respo Created: DB0 Respo created, DB0 with basic demo.py & sources to test import of psycopg2
 
---v1 Connect to DB: Just make sure you installed psql for this to work properly. Besides that it will connect to it, elkse
+v1 Connect to DB: Just make sure you installed psql for this to work properly. Besides that it will connect to it, elkse
                     tells the user a connection issue. You can use the link below on changing the password if you would like
                      to. Or use the template @ line 22 to do a quick pass change
                 Link to change pass info: https://www.postgresqltutorial.com/postgresql-change-password/
                 Quick change -> ALTER ROLE username WITH PASSWORD 'secret123';
                     Template to use on cmder -> ALTER ROLE postgres WITH PASSWORD 'secret123'';
+
+--v2 Table Creation: you can now create a db. To delete a pre-made db just type the following -> DROP TABLE table_name;
+                    more link @ here: https://www.postgresql.org/docs/8.2/sql-droptable.html , enjoy!
