@@ -1,3 +1,5 @@
+
+# import psycopg2
 try :
     import psycopg2
 except ImportError:
