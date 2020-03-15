@@ -38,5 +38,15 @@ v6 Gui Formed: gui is formed @ user.py. aquires some resources from the tk_sourc
                    information @ demo.py. Once the user has submitted the information, it is then added onto the DB, to see
                    the db type \d then select * from your_custom_db_name;
 
---v7 Terminal Update: Db can now search for users using the user.py for gui interface. If a user types a # it will print
+v7 Terminal Update: Db can now search for users using the user.py for gui interface. If a user types a # it will print
                         out the user that correlates with that ID
+
+--v8 Updated GUI: information can be auto-seen, can now search for user's ID, and update new users/see them on the 'users'
+                    list. Similiar work to https://github.com/CyborgVillager/python_final_project which has similiar props
+                    Any how its great getting a refresher. Will now work w/ react for the front end side of things.
+
+                    Objectives at hand:
+                    * React mini project
+                    * Grand Command
+                    * A.I -> requires custom server (have some big plans!!!)
+                    * Couple of py stuff
