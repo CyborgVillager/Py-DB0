@@ -5,6 +5,12 @@ except ImportError:
     print('Unable to import tk_source, make sure you have made the source folder classified as source' + '\n' +
           'Thank you')
 
+try:
+    from search import *
+except ImportError:
+    print('Unable to import search, make sure you have made the source folder classified as source' + '\n' +
+          'Thank you')
+
 root = Tk()
 # width & height
 root.geometry('500x200')
@@ -38,6 +44,8 @@ def get_data(user_name, user_age, user_addr):
 
     except ConnectionError:
         print('Unable to connect to DB ')
+
+
 
 
 # Canvas information
@@ -78,5 +86,25 @@ button = Button(frame, text='Submit', command=lambda: get_data(entry_username.ge
                                                                ))
 # Submit button Location
 button.grid(row=4, column=1)
+
+
+
+# Search Feature
+label = Label(frame, text='Search User ID')
+label.grid(row=5, column=1)
+
+# Search input box
+entry_user_search = Entry(frame)
+entry_user_search.grid(row=6, column=1)
+
+label = Label(frame, text='Search: ')
+label.grid(row=6, column=0)
+
+# Submit Search Button
+button = Button(frame, text='Submit', command=lambda:search(entry_user_search.get()))
+# Submit Search button Location
+button.grid(row=6, column=2)
+
+
 
 root.mainloop()

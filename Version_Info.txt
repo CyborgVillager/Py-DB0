@@ -34,6 +34,9 @@ v4 Efficient Input: Learned just to use %s in replacement of inputing more work.
 v5 Basic Gui: using tkinter, basic info at the moment. Feel free to use Gui_Tutorial for more reference as well.
             link: https://github.com/CyborgVillager/Gui_Tutorial/tree/master/tkint_tutorial_files
 
---v6 Gui Formed: gui is formed @ user.py. aquires some resources from the tk_source.py which is located @ source, and some
+v6 Gui Formed: gui is formed @ user.py. aquires some resources from the tk_source.py which is located @ source, and some
                    information @ demo.py. Once the user has submitted the information, it is then added onto the DB, to see
                    the db type \d then select * from your_custom_db_name;
+
+--v7 Terminal Update: Db can now search for users using the user.py for gui interface. If a user types a # it will print
+                        out the user that correlates with that ID
