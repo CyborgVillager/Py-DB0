@@ -22,6 +22,8 @@ print('\n')
 table_name = input('Please type your table name: ')
 
 
+
+
 # Cursor/ table query creation
 def create_table():
     try:
@@ -70,7 +72,7 @@ def insert_data():
         cursor = connection.cursor()
 
         # Insert user data onto db table
-        query  = '''INSERT INTO ''' + table_name + '''(NAME,AGE,ADDRESS) VALUES (%s,%s,%s);'''
+        query = '''INSERT INTO ''' + table_name + '''(NAME,AGE,ADDRESS) VALUES (%s,%s,%s);'''
         cursor.execute(query,(user_name,user_age,user_addr))
 
         # commit changes after connecting to cursor
@@ -79,6 +81,7 @@ def insert_data():
         print('Submitted info to DB, username is: ' + user_name + ' age is ' + str(user_age) + ' ' +
               user_name + ' addr is: ' + user_addr)
         print('\n')
+
         # Close connection
         connection.close()
         print('Inserted data onto ' + table_name + ' is now closed')

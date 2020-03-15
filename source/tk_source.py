@@ -5,15 +5,9 @@ try:
 except ImportError:
     print('Unable to import tkinter.')
 
+# import pydb
+try:
+    from pydb import *
+except ImportError:
+    print('Unable to import pydb.')
 
-root = Tk()
-canvas = Canvas(root, height=500, width=900)
-canvas.pack
-
-frame=Frame()
-frame.place(relx=.3,rely=.1,relwidth=.9,relheight=.8)
-
-label=Label(frame,text='Add data here!')
-label.grid(row=0,column=1)
-
-root.mainloop()

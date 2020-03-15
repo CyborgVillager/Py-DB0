@@ -31,5 +31,9 @@ v3 User Input: user now can input the user data, e.g for school the 'admin' can 
 v4 Efficient Input: Learned just to use %s in replacement of inputing more work. Simplier is better for you, and for other
                         people to use/learn. Feel free to check v3 on the reason for this change to use %s.
 
---v5 Basic Gui: using tkinter, basic info at the moment. Feel free to use Gui_Tutorial for more reference as well.
+v5 Basic Gui: using tkinter, basic info at the moment. Feel free to use Gui_Tutorial for more reference as well.
             link: https://github.com/CyborgVillager/Gui_Tutorial/tree/master/tkint_tutorial_files
+
+--v6 Gui Formed: gui is formed @ user.py. aquires some resources from the tk_source.py which is located @ source, and some
+                   information @ demo.py. Once the user has submitted the information, it is then added onto the DB, to see
+                   the db type \d then select * from your_custom_db_name;
